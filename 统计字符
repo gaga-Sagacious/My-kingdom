@@ -1,0 +1,28 @@
+#include<string.h>
+int main()
+{
+	printf("Please input a sentence:\n");
+	char arr[100];
+	gets(arr);
+	printf("Please input a sentence:\n");
+	char w[10];
+	gets(w);
+	int a,b;
+	a=strlen(arr);
+	b=strlen(w);
+	int j,i,count;count=0;
+	for(i=0;i<=(a-b);i++)
+	{
+		char arr1[b];
+		for(j=0;j<b;j++)
+		{
+			arr1[j]=arr[i+j];
+		}
+		if(strcmp(arr1,w)==0)
+		{
+			count++;
+		}
+	 } 
+	 printf("%d",count);
+	return 0;
+ } 
